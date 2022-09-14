@@ -20,7 +20,6 @@ export default defineComponent({
     components: { SpinnerLoading },
     methods: {
       handleDelete() {
-        console.log("sddscd")
         deleteImage(this.id).then( () => {
           this.$emit('img-deleted')
         })

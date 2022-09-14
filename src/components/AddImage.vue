@@ -31,7 +31,6 @@ export default defineComponent({
     methods: {
       save(){
         saveImage({name: this.label, url: this.url}).then((res) => {
-          console.log(res)
           this.$emit('add-image', true)
         })
       }
