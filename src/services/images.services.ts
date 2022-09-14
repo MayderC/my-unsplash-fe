@@ -1,5 +1,5 @@
 import type { ImageRequest, ImageResponse } from "@/interfaces/images"
-
+const BASE_URL = import.meta.env.BASE_URL
 
 export const getImages = async () : Promise<ImageResponse[]> => {
   const res = await fetch('http://localhost:3000/api/image')
