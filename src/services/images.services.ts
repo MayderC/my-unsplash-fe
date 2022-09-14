@@ -2,7 +2,6 @@ import type { ImageRequest, ImageResponse } from "@/interfaces/images"
 const BASE_URL = import.meta.env.VITE_BASE_URL
 
 export const getImages = async () : Promise<ImageResponse[]> => {
-  console.log(BASE_URL)
   const res = await fetch(BASE_URL)
   return await res.json()
 }
