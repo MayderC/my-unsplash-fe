@@ -21,7 +21,7 @@ export const saveImage = async (image: ImageRequest): Promise<ImageResponse> => 
 
 export const deleteImage = async (id: string) : Promise<void> => {
 
-   await  fetch(BASE_URL + id, {
+   await  fetch(BASE_URL +"/"+ id, {
     method: 'DELETE',
     headers: {
       'content-type' : 'application/json',
